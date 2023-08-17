@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Soundboard</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    :root{
+        font-size: 60px;
+    }
+    
+    body{
+        background-color: #77787A;
+    }
+    
+    button {
+        background: linear-gradient(145deg, #FFFFFF, #B3B5B8);
+        box-shadow: 0.1rem 0.1rem 0.2rem #a8a9ac, -0.1rem -0.1rem 0.2rem #adaeaf;
+        border: 0;
+        border-radius: 0.25rem;
+        padding: 0.5rem;
+        margin: 0.25rem;
+        font-size: 1rem;
+    }
+    
+    button:active {
+        box-shadow: inset 0.1rem 0.1rem 0.2rem #a8a9ac, inset -0.1rem -0.1rem 0.2rem #adaeaf;
+    }
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    </style>
+</head>
+<body><main>
+    
+    <button data-src="y2mate.com - Quandale Dingle sound effect.mp3">💀</button>
+    <button data-src="murder-in-my-mind-intro.mp3">💀</button>
+    <button data-src="erro.mp3">💀</button>
+    <button data-src="danger-alarm-sound-effect-meme.mp3">💀</button>
+    <button data-src="goofy-ahh-car-horn-sound-effect.mp3">💀</button>
+    <button data-src="galaxy-meme.mp3">💀</button>
+    <button data-src="goofy-ahh-runnin.mp3">💀</button>
+    <button data-src="y2mate.com - fortnite balls.mp3">💀</button>
+    <button data-src="y2mate.com - RAWR TikTok Sound effect.mp3">💀</button>
+    <button data-src="metal-pipe-clang.mp3">💀</button>
+    <button data-src="vine-boom.mp3">💀</button>
+    <button data-src="sigma.mp3">💀</button>
+    <button data-src="top-g-theme.mp3">💀</button>
+    <button data-src="y2mate_HrgsElu.mp3">💀</button>
+    <button data-src="spongebob-fail.mp3">💀</button>
+    <button data-src="indian-music-bass-boosted.mp3">💀</button>
+
+</main>
+<br><br><br><br><br>
+    <button style="position: fixed; bottom: 0; right: 0; " onclick="window.location.reload()">Clear All Sounds</button>
+    <audio src="y2mate_HrgsElu.mp3"></audio>
+    <audio src="murder-in-my-mind-intro.mp3"></audio>
+    <audio src="danger-alarm-sound-effect-meme.mp3"></audio>
+    <audio src="goofy-ahh-car-horn-sound-effect.mp3"></audio>
+    <audio src="top-g-theme.mp3"></audio>
+    <audio src="erro.mp3"></audio>
+    <audio src="sigma.mp3"></audio>
+    <audio src="spongebob-fail.mp3"></audio>
+    <audio src="vine-boom.mp3"></audio>
+    <audio src="metal-pipe-clang.mp3"></audio>
+    <audio src="galaxy-meme.mp3"></audio>
+    <audio src="indian-music-bass-boosted.mp3"></audio>
+    <audio src="goofy-ahh-runnin.mp3"></audio>
+    <audio src="y2mate.com - Quandale Dingle sound effect.mp3"></audio>
+    <audio src="y2mate.com - fortnite balls.mp3"></audio>
+    <audio src="y2mate.com - RAWR TikTok Sound effect.mp3"></audio>
+    <script>
+        var x = document.querySelectorAll("audio");
+        var b = document.querySelectorAll("button");
+
+        b.forEach(item=> {
+            item.addEventListener('click',() => {
+                document.querySelector('audio[src="' + item.getAttribute('data-src') +'"]').play();
+            });
+        });
+    </script>
+</body>
+</html>
